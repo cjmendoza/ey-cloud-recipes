@@ -4,6 +4,9 @@
 #  }
 #end
 
+# to support drugs database
+require_recipe "multiple_db"
+
 # uncomment to turn on thinking sphinx 2/ultra sphinx. Remember to edit cookbooks/sphinx/recipes/default.rb first!
 # include_recipe "sphinx"
 
@@ -32,7 +35,7 @@
 # include_recipe "eybackup_slave"
 
 #uncomment to run the ssmtp recipe
-#include_recipe "ssmtp"
+include_recipe "ssmtp"
 
 #uncomment to run the sunspot recipe
 # include_recipe "sunspot"
@@ -89,6 +92,8 @@
 
 #uncomment to include the Elasticsearch recipe
 #include_recipe "elasticsearch"
+
+#include_recipe "whenever"
 
 # To install specific plugins to Elasticsearch see below as an example
 #es_plugin "cloud-aws" do
