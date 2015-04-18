@@ -1,0 +1,15 @@
+<%= @environment %>:
+  adapter:   <%= @adapter %>
+  database:  <%= @database %>
+  username:  <%= @username %>
+  password:  <%= @password %>
+  host:      <%= @host %>
+  reconnect: true
+
+drugs:
+  adapter:   <%= @adapter %>
+  database:  drugs
+  username:  <%= @username %>
+  password:  <%= @password %>
+  host:      <%= @host %>
+  reconnect: true
